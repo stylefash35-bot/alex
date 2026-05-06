@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Доступ ограничен</title>
+    <title>Access Restricted</title>
     <style>
         * { box-sizing: border-box; }
         body, html { 
@@ -12,13 +12,12 @@
             overflow: hidden; 
         }
         
-        /* Фон - твоя картинка 2.png БЕЗ РАЗМЫТИЯ */
         .bg {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             background: url('/templates/Alexia Grace.png') no-repeat center top;
             background-size: cover;
-            filter: brightness(0.5); /* Убрали blur, оставили затемнение для читаемости текста */
+            filter: brightness(0.5); 
             z-index: 1;
         }
 
@@ -31,16 +30,13 @@
             justify-content: flex-end;
             height: 100%;
             padding: 40px 25px;
-            /* Градиент снизу вверх для плавного перехода к черному фону */
             background: linear-gradient(to bottom, transparent 20%, rgba(0,0,0,0.6) 50%, #000 95%);
             text-align: center;
         }
 
-        .lock { font-size: 14px; margin-bottom: 15px; color: #fff; opacity: 0.7; letter-spacing: 1px; font-weight: 300; }
+        .lock { font-size: 14px; margin-bottom: 25px; color: #fff; opacity: 0.7; letter-spacing: 1px; font-weight: 300; }
         
-        h1 { font-size: 30px; color: #fff; margin: 0 0 10px 0; font-weight: 900; line-height: 1.1; text-transform: uppercase; }
-        
-        p { font-size: 17px; color: #fff; margin-bottom: 35px; line-height: 1.4; opacity: 0.9; font-weight: 400; }
+        h1 { font-size: 32px; color: #fff; margin: 0 0 30px 0; font-weight: 900; line-height: 1.1; text-transform: uppercase; }
 
         .btn-main {
             display: flex;
@@ -67,6 +63,7 @@
             font-size: 15px;
             padding: 10px;
             opacity: 0.8;
+            margin-bottom: 10px;
         }
 
         @keyframes pulse {
@@ -81,13 +78,12 @@
 <div class="bg"></div>
 
 <div class="content">
-    <div class="lock">🔒 ПРИВАТНЫЙ ДОСТУП</div>
-    <h1>ТЕБЕ ЕСТЬ 18 ЛЕТ?</h1>
-    <p>Подтверди свой возраст, чтобы увидеть анкеты девушек, готовых к встрече прямо сейчас.</p>
+    <div class="lock">🔒 PRIVATE ACCESS</div>
+    <h1>ARE YOU 18?</h1>
     
-    <a href="https://tone.affomelody.com/click?pid=95009&offer_id=25&sub1=Liz April" class="btn-main">ДА, МНЕ ЕСТЬ 18+</a>
+    <a href="https://tone.affomelody.com/click?pid=95009&offer_id=25&sub1=Liz April" class="btn-main">YES, I AM 18+</a>
     
-    <a href="#" class="btn-alt" onclick="alert('Доступ ограничен для лиц младше 18 лет')">Мне меньше 18</a>
+    <a href="#" class="btn-alt" onclick="alert('Access restricted for individuals under 18')">No, I'm under 18</a>
 </div>
 
 </body>
